@@ -11,13 +11,13 @@ import (
 )
 
 type ConsumerKeyConfigurations struct {
-	ConsumerKey       string `mapstructure:"consumer_key" validate:"required"`
-	ConsumerSecretKey string `mapstructure:"consumer_secret_key" validade:"required"`
+	ConsumerKey       string //`mapstructure:"consumer_key" validate:"required"`
+	ConsumerSecretKey string //`mapstructure:"consumer_secret_key" validade:"required"`
 }
 
 type AccessKeyConfigurations struct {
-	AcessKey       string `mapstructure:"acess_key" validade:"required"`
-	AcessSecretKey string `mapstructure:"acess_secret_key" validade:"required"`
+	AcessKey       string //`mapstructure:"acess_key" validade:"required"`
+	AcessSecretKey string //`mapstructure:"acess_secret_key" validade:"required"`
 }
 
 // Configurations exported
@@ -64,7 +64,3 @@ func loadConfig() (config *Configurations) {
 	}
 	return
 }
-
-// func registerVariables(child interface{}, parents []string) {
-
-// }
